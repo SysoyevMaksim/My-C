@@ -6,7 +6,7 @@ int main()
 {
     double a, b, c, d;
     cin>>a, b, c, d;
-    if(a == c || b == d||(abs(a-c) == abs(b-d)))
+    if((a == c) || (b == d)||(abs(a-c) == abs(b-d)))
     {
      cout<< "YES";
     }
