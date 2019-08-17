@@ -9,7 +9,7 @@ int main()
     getline(cin, s);
     for(int i = 0; i <= s.length(); i++)
     {
-        if(e = 1 && s[i] == '')
+        if(e = 1 && (s[i] >= a && s[i] <= z))
         {
             continue;
         }
@@ -33,6 +33,7 @@ int main()
             d = 1;
             e = 1;
         }
+        if(a = 1 && s[i] >= 0)
     }
     return 0;
 }
