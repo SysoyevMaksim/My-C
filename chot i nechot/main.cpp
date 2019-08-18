@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     int a, b, c, d, f, g;
+    cin>> a >> b >> c;
     d = a%2;
     f = b%2;
     g = c%2;

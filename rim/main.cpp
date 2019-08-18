@@ -8,124 +8,64 @@ int main()
     cin>> x;
     a = x % 10;
 
-    if (x == 100)
+    if(x == 1000)
     {
-        cout<< "C";
+        cout<< "M";
         return 0;
     }
     else
     {
-        if (x >= 90)
+        if(x >= 900)
         {
-            cout<< "XC";
+            cout<<"CM";
         }
         else
         {
-            if (x >= 80)
+            if(x >= 800)
             {
-                cout<< "LXXX";
+                cout<<"DCCC";
             }
             else
             {
-                if (x >= 70)
+                if(x >= 700)
                 {
-                    cout<< "LXX";
+                    cout<<"DCC";
                 }
                 else
                 {
-                    if (x >= 60)
+                    if(x >= 600)
                     {
-                        cout<< "LX";
+                        cout<<"DC";
                     }
                     else
                     {
-                        if (x >= 50)
+                        if(x >= 500)
                         {
-                            cout<< "L";
+                            cout<<"D";
                         }
                         else
                         {
-                            if (x >= 40)
+                            if(x >= 400)
                             {
-                                cout<< "XL";
+                                cout<<"CD";
                             }
                             else
                             {
-                                if (x >= 30)
+                                if(x >= 300)
                                 {
-                                    cout<< "XXX";
+                                    cout<<"CCC";
                                 }
                                 else
                                 {
-                                    if (x >= 20)
+                                    if(x >= 200)
                                     {
-                                        cout<< "XX";
+                                        cout<<"CC";
                                     }
                                     else
                                     {
-                                        if (x >= 10)
+                                        if(x >= 100)
                                         {
-                                            cout<< "X";
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        if (a == 9)
-        {
-            cout<< "IX";
-        }
-        else
-        {
-            if (a == 8)
-            {
-                cout<< "VIII";
-            }
-            else
-            {
-                if (a == 7)
-                {
-                    cout<< "VII";
-                }
-                else
-                {
-                    if (a == 6)
-                    {
-                        cout<< "VI";
-                    }
-                    else
-                    {
-                        if (a == 5)
-                        {
-                            cout<< "V";
-                        }
-                        else
-                        {
-                            if (a == 4)
-                            {
-                                cout<< "IV";
-                            }
-                            else
-                            {
-                                if (a == 3)
-                                {
-                                    cout<< "III";
-                                }
-                                else
-                                {
-                                    if (a == 2)
-                                    {
-                                        cout<< "II";
-                                    }
-                                    else
-                                    {
-                                        if (a == 1)
-                                        {
-                                            cout<< "I";
+                                            cout<<"C"
                                         }
                                     }
                                 }
@@ -136,5 +76,195 @@ int main()
             }
         }
     }
-    return 0;
+    if (x >= 90)
+               
+    {
+                    cout<< "XC";
+               
+    }
+            else
+               
+        {
+                        if (x >= 80)
+                       
+    {
+                        cout<< "LXXX";
+                   
+    }
+                else
+                   
+        {
+                            if (x >= 70)
+                               
+        {
+                                cout<< "LXX";
+                           
+        }
+                        else
+                           
+            {
+                                    if (x >= 60)
+                                       
+            {
+                                        cout<< "LX";
+                                   
+            }
+                                else
+                                   
+                {
+                                            if (x >= 50)
+                                               
+                {
+                                                cout<< "L";
+                                           
+                }
+                                        else
+                                           
+                    {
+                                                    if (x >= 40)
+                                                       
+                    {
+                                                        cout<< "XL";
+                                                   
+                    }
+                                                else
+                                                   
+                        {
+                                                            if (x >= 30)
+                                                               
+                        {
+                                                                cout<< "XXX";
+                                                           
+                        }
+                                                        else
+                                                           
+                            {
+                                                                    if (x >= 20)
+                                                                       
+                            {
+                                                                        cout<< "XX";
+                                                                   
+                            }
+                                                                else
+                                                                   
+                                {
+                                                                            if (x >= 10)
+                                                                               
+                                {
+                                                                                cout<< "X";
+                                                                           
+                                }
+                                   
+}
+                               
+}
+                           
+}
+                       
+}
+                   
+}
+               
+}
+           
+}
+       
+}
+        if (a == 9)
+               
+    {
+                    cout<< "IX";
+               
+    }
+            else
+               
+        {
+                        if (a == 8)
+                       
+    {
+                        cout<< "VIII";
+                   
+    }
+                else
+                   
+        {
+                            if (a == 7)
+                               
+        {
+                                cout<< "VII";
+                           
+        }
+                        else
+                           
+            {
+                                    if (a == 6)
+                                       
+            {
+                                        cout<< "VI";
+                                   
+            }
+                                else
+                                   
+                {
+                                            if (a == 5)
+                                               
+                {
+                                                cout<< "V";
+                                           
+                }
+                                        else
+                                           
+                    {
+                                                    if (a == 4)
+                                                       
+                    {
+                                                        cout<< "IV";
+                                                   
+                    }
+                                                else
+                                                   
+                        {
+                                                            if (a == 3)
+                                                               
+                        {
+                                                                cout<< "III";
+                                                           
+                        }
+                                                        else
+                                                           
+                            {
+                                                                    if (a == 2)
+                                                                       
+                            {
+                                                                        cout<< "II";
+                                                                   
+                            }
+                                                                else
+                                                                   
+                                {
+                                                                            if (a == 1)
+                                                                               
+                                {
+                                                                                cout<< "I";
+                                                                           
+                                }
+                                   
+}
+                               
+}
+                           
+}
+                       
+}
+                   
+}
+               
+}
+           
+}
+       
+}
+   
+}
+    return 0;
 }
