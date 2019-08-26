@@ -6,6 +6,11 @@ int main()
 {
     int n;
     cin>> n;
+    if(n == 1)
+    {
+        cout<< 1;
+        return 0;
+    }
     int x = 1, y = n - 1, steps = n - 1, d = 1, array[100] [100];
     for(int x = 1; x < n; x++)
     {
@@ -38,7 +43,7 @@ int main()
             {
                 for(int yv = 0; yv < n; yv++)
                 {
-                    cout<< array [xv] [yv] << " ";
+                    cout<< array [xv] [yv];
                 }
                 cout<< endl;
             }
