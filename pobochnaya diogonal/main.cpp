@@ -6,6 +6,13 @@ int main()
 {
     int n, array [101] [101], copn;
     cin>> n;
+    for(int x = 1; x <= n; x++)
+    {
+        for(int y = 1; y <= n; y++)
+        {
+            array[x] [y] = 0;
+        }
+    }
     copn = n;
     for(int i = 1; i <= n; i++)
     {
