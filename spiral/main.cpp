@@ -25,7 +25,7 @@ int main()
             for(int i = 0; i < steps; i++)
             {
                 x += d * (1-h);
-                y += d * h;
+                y -= d * h;
                 array[x][y] = 1;
             }
         }
@@ -34,7 +34,7 @@ int main()
         steps--;
         if(steps == 0)
         {
-            for(int xv = 1; xv <= n+1; xv++)
+            for(int xv = 1; xv < n+1; xv++)
             {
                 for(int yv = 0; yv < n; yv++)
                 {
