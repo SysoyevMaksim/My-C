@@ -17,7 +17,7 @@ int main()
         }
         else
         {
-            if(x > max2)
+            if(x > max2 && x != max)
             {
                 max2 = x;
             }
