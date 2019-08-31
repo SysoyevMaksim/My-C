@@ -6,8 +6,8 @@ int main()
 {
     int max, max2, array[1000], x;
     cin>> x;
-    max = x;
-    max2 = x;
+    max = 0;
+    max2 = 0;
     while(x != 0)
     {
         if(x > max)
