@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int array [1000], n, kol = 0, c, d, e;
+    int array [1000], n, kol = 0, c, d, e, a = 0;
     cin>> n;
     for(int i = 0; i < n; i++)
     {
@@ -14,10 +14,19 @@ int main()
     {
         if(array[x] < 0)
         {
-            break;
+            if(a == 1)
+            {
+                a = 0;
+                x = -1;
+            }
+            else
+            {
+                break;
+            }
         }
         if(array[x] == array[x + 1] && array[x] == array[x + 2])
         {
+           a = 1;
            c = x;
            for(int y = x + 2; array[y] == array [x] && y < n; y++)
            {
@@ -36,10 +45,20 @@ int main()
                array[z] = -1;
            }
            kol += e;
-           x = - 1;
+           //x = - 1;
 
+        }
+        if(x == n - 3)
+        {
+            if(a == 1)
+            {
+                a = 0;
+                x = -1;
+            }
         }
     }
     cout<< kol;
+    cout<< endl;
+    //for(int i = 0; i < n; i++) cout<< array[i] << " ";
     return 0;
 }
