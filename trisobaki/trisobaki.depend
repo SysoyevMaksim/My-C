@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1568458619 source:c:\users\sysoy\desktop\c++\trisobaki\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+
