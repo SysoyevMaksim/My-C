@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1568749176 source:c:\users\sysoy\desktop\c++\kon i korol\main.cpp
+1568919202 source:c:\users\sysoy\desktop\c++\kon i korol\main.cpp
 	<iostream>
 	<string>
+	<fstream>
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -40,30 +41,65 @@ int kon(int a, int b, int c, int d)
 
 int main()
 {
+    ifstream infile("input.txt");
+    ofstream outfile("output.txt");
     int a, b, c, d, flagl = 0, flag2 = 0, flag3 = 0, flag4 = 0;
     string co1, co2;
-    cin>> co1 >> co2;
+    infile>> co1 >> co2;
     a = co1[0] - 'a';
-    b = co1[1] - '0';
+    b = co1[1] - '1';
     c = co2[0] - 'a';
-    d = co2[1] - '0';
+    d = co2[1] - '1';
     if(kon(a, b, c, d) == 2)
     {
-        cout<< "Y";
+        outfile<< "Y";
+        flagl = 1;
     }
     else
     {
-        cout<< "N";
+        outfile<< "N";
+    }
+    if(flagl == 0)
+    {
+        for(int x = a - 2; x <= a + 2; x++)
+        {
+            for(int y = b - 2; y <= b + 2; y++)
+            {
+                if(x != a && y != b && abs(x) != abs(y))
+                {
+                    //cout<< x << " " << y << endl;
+                    if(kon(x, y, c, d) == 2 && x >= 0 && y >= 0)
+                    {
+                        outfile<< "Y";
+                        flag2 = 1;
+                        break;
+                    }
+                }
+            }
+            if(flag2 == 1)
+            {
+                break;
+            }
+        }
+        if(flag2 == 0)
+        {
+            outfile<< "N";
+        }
+    }
+    else
+    {
+        outfile<< "N";
     }
     if(korol(a, b, c, d) == 2)
     {
-        cout<< "Y";
+        outfile<< "Y";
         flag3 = 1;
     }
     else
     {
-        cout<< "N";
+        outfile<< "N";
     }
+
     if(flag3 == 0)
     {
         for(int x = a - 1; x <= a + 1; x++)
@@ -72,7 +108,7 @@ int main()
             {
                 if(korol(x, y, c, d) == 2)
                 {
-                    cout<< "Y";
+                    outfile<< "Y";
                     flag4 = 1;
                     break;
                 }
@@ -84,12 +120,12 @@ int main()
         }
         if(flag4 == 0)
         {
-            cout<< "N";
+            outfile<< "N";
         }
     }
     else
     {
-        cout<< "N";
+        outfile<< "N";
     }
     return 0;
 }
