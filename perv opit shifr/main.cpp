@@ -2,10 +2,11 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <cmath>
 
 using namespace std;
 
-int shifr(int i, int j, string s)
+string shifr(int i, int j, string s)
 {
     int a = 0, b = 0;
     //i--;
@@ -17,6 +18,7 @@ int shifr(int i, int j, string s)
         s[j - b] = a;
         b++;
     }
+    return s;
 }
 
 int main()
@@ -31,13 +33,15 @@ int main()
     getline(infile, s);
     for(i = 0; i < s.length(); i+= k)
     {
-        shifr(i, i+k-1, s);
+        s = shifr(i, i+k-1, s);
     }
+    //cout<< s << " " << i << " " << s.length();
     if(i >= s.length())
     {
         i -= k;
         i++;
-        shifr(i, s.length() - 1, s);
+        cout<< i << " " << s.length();
+        s = shifr(i, s.length() - 1, s);
     }
     outfile << s;
     return 0;
