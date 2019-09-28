@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569684023 source:c:\users\sysoy\desktop\c++\perv opit shifr\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
