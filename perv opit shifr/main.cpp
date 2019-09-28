@@ -11,7 +11,7 @@ string shifr(int i, int j, string s)
     int a = 0, b = 0;
     //i--;
     //j--;
-    for(int c = i; c <= i + ((j - i)/2); c++)
+    for (int c = i; c <= i + ((j - i) / 2); c++)
     {
         a = s[c];
         s[c] = s[j - b];
@@ -31,16 +31,19 @@ int main()
     istringstream ss(s);
     ss >> k;
     getline(infile, s);
-    for(i = 0; i < s.length(); i+= k)
+    cout << s << " " << i << " " << s.length() << endl;
+
+    for (i = 0; i < s.length() - k; i += k)
     {
-        s = shifr(i, i+k-1, s);
+        s = shifr(i, i + k - 1, s);
+        cout << s << " " << i << " " << s.length() << endl;
     }
-    //cout<< s << " " << i << " " << s.length();
-    if(i >= s.length())
+    // cout << s << " " << i << " " << s.length() << endl;
+    if (i < s.length() - 1)
     {
-        i -= k;
-        i++;
-        cout<< i << " " << s.length();
+        // i -= k;
+        // i++;
+        cout << s << " " << i << " " << s.length() << endl;
         s = shifr(i, s.length() - 1, s);
     }
     outfile << s;
