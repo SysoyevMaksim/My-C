@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1569940296 source:d:\ׁûסמוג\local\horoshie paroli\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+
