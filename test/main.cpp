@@ -4,23 +4,8 @@ using namespace std;
 
 int main()
 {
-    int a, b;
-    cin>> a >> b;
-    if (a == b)
-    {
-     cout<< "YES";
-    }
-    else
-    {
-     if(a != b && b != 1 && a != 1)
-    {
-     cout<< "YES";
-    }
-    else
-    {
-     cout<< "NO";
-    }
-    }
-
+    int a [1] [100000];
+    a[2] [2] = 1;
+    cout<< a[2] [2];
     return 0;
 }
