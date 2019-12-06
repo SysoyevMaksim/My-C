@@ -10,6 +10,14 @@ int main()
     bool b = (y1 < y2);
     x = 2 * a - 1;
     y = 2 * b - 1;
-    cout << x << " " << y;
+    //cout << x << " " << y << endl;
+        for(int i = x1; i != x2 + x; i+= x)
+        {
+            //cout<< i << " ";
+            for(int j = y1; j != y2 + y; j+= y)
+             {
+                 //cout<< j << endl;
+             }
+        }
     return 0;
 }
