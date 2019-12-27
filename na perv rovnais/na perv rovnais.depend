@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1569848225 source:c:\users\sysoy\desktop\c++\na perv rovnais\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+

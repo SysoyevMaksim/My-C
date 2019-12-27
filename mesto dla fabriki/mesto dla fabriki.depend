@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1569779339 source:c:\users\sysoy\desktop\c++\mesto dla fabriki\main.cpp
+	<iostream>
+	<fstream>
+
