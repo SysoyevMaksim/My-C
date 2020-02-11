@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1578562186 source:d:\ׁûסמוג\local\max from min\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+
