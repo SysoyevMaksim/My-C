@@ -17,13 +17,14 @@ bool test(int i, int j)
         }
         if(s2[i] == '*')
         {
-            while((s2[i+1] == '*' || s2[i+1] == '?') && i < s2.length())
+            while((s2[i] == '*' || s2[i] == '?') && i < s2.length())
             {
                 if(s2[i] == '?')
                 {
-                    if(j+1 < s1.length())
+                    j++;
+                    if(j >= s1.length())
                     {
-                        j++;
+                        return false;
                     }
                 }
                 i++;
@@ -33,7 +34,7 @@ bool test(int i, int j)
                 return true;
             }
             int k = i;
-            while(s2[k] != '*' && s2[k] != '?' && k < s2.length() - 1)
+            while(s2[k] != '*' && s2[k] != '?' && k < s2.length())
             {
                 k++;
             }
@@ -42,7 +43,7 @@ bool test(int i, int j)
                 return true;
             }
             string s3 = s2.substr(i, k - i);
-            cout<< s3;
+            //cout<< s3;
             if(s1.find(s3, j) != string::npos)
             {
                 j = s1.find(s3, j);
@@ -68,10 +69,23 @@ bool test(int i, int j)
         i++;
         j++;
     }
-    if((j == s1.length() && i < s2.length()) || (j < s1.length() && i == s2.length()))
+    if(j < s1.length() && i == s2.length())
     {
         //cout<< "NO";
         return false;
+    }
+    if(j == s1.length() && i < s2.length())
+    {
+        while(i < s2.length())
+        {
+            if(s2[i] != '*')
+            {
+                //cout<< "NO";
+                return false;
+            }
+            i++;
+        }
+        return true;
     }
     return true;
 }
